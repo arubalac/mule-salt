@@ -59,7 +59,7 @@ Following paths can be mounted from the container. `/srv/salt` is needed to run 
 The pre built image can be downloaded using docker directly. After that you do not need to use this command again, you will have the image on your local computer.
 
 ```
-docker pull jacksoncage/salt
+docker pull cisco/mule-salt
 ```
 
 ### Build the docker image by yourself
