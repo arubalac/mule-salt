@@ -32,6 +32,12 @@ docker run -i -t --name=mulesaltdocker_minion_1 -h minion1 -p 4505 -p 4506 \
    -v `pwd`/srv/salt:/srv/salt:rw cisco/mule-salt
 ```
 
+## Note:
+
+The current version of mule-salt docker has limitation of dynamic ip detection. So 
+you may need to get the docker ip of the master and set it in the minion file before running the minion.
+
+
 By jumping in with `docker exec -i -t mulesaltdocker_master_1 bash` your able to test/troubleshoot. Now your ready to write you states and test them out.
 
 ## Environment variables
